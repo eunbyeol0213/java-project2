@@ -2,16 +2,13 @@ package com.example.javaproject2.codeup;
 
 import java.util.Scanner;
 
-public class CodeUp1071 {
+public class CodeUp1072 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        while (true){
+        int count = sc.nextInt();
+        for(int i = 0; i <count; i++){
             int val = sc.nextInt();
-            if(val != 0){
-                System.out.printf("%d ", val);
-            } else{
-                break;
-            }
+            System.out.println(val);
         }
     }
 }
