@@ -3,13 +3,22 @@ package com.example.javaproject2.programmers;
 import java.util.Scanner;
 
 public class DiceGame {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int diceA = sc.nextInt();
-        int diceB = sc.nextInt();
-        int diceC = sc.nextInt();
-        if(diceA !=  diceB & diceB !=diceC & diceA != diceC){
-            System.out.println(diceA + diceB + diceC);
+        public int solution(int a, int b, int c) {
+            int answer = 0;
+
+            if (a != b && b != c && a != c){
+                answer = a + b + c;
+            }
+
+            else if (a == b && a == c && b == c) {
+                answer = (a + b + c) * (a*a + b*b + c*c)  * (a*a*a + b*b*b + c*c*c);
+            }
+
+            else{
+                answer = (a + b + c) * (a*a + b*b + c*c);
+            }
+            return answer;
         }
-    }
+
+
 }
