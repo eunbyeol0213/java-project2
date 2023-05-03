@@ -10,6 +10,7 @@ public class Remainder687Sum {
         int c = num % 10;
         System.out.println(a + b + c);
 
+
     }
 
 
