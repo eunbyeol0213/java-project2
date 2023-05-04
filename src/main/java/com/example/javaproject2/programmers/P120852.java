@@ -3,8 +3,9 @@ package com.example.javaproject2.programmers;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Factorization {
+public class P120852 {
     //소인수분해
+    //방법 1
     public int[] solution(int n){
         List<Integer> list = new ArrayList<>();
 
@@ -25,6 +26,39 @@ public class Factorization {
             answer[i] = list.get(i);
         }
         return answer;
+    }
+
+    //방법 2
+    public static void main(String[] args) {
+        int n = 12;
+        int divisor=2;
+
+        int[] arr = new int[n + 1];
+
+        while(n > 1){
+            if(n % divisor == 0){
+                arr[divisor] = divisor;
+                n /= divisor;
+            } else{
+                // 12 /2 = 6 /2 = 3 /2 은 2로 나누어 떨어지지 않음
+                divisor++;
+            }
+        }
+
+        //0이 아닌 숫자의 개수 O(n)
+        int size = 0;
+        for (int i  = 0; i< arr.length; i++){
+            if(arr[i] != 0){
+                size++;
+            }
+        }
+
+        //0이 아닌 숫자를 앞에부터 넣기 o(n)
+        int[] answer = new int[size];
+        int idx = 0;
+        for(int i = 0; i < arr.length; i++){
+
+        }
     }
 
 }
