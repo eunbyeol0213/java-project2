@@ -1,0 +1,22 @@
+package com.example.javaproject2.week4.day1;
+
+public class VariousReturnType {
+    public boolean isAdult(){
+        return true;
+    }
+
+    public int plus(){
+        return 1 + 1;
+    }
+
+    public void printHello(){
+        System.out.println("Hello");
+    }
+
+    public static void main(String[] args) {
+        VariousReturnType vrt = new VariousReturnType();
+        boolean isAdult = vrt.isAdult();
+        int plusResult = vrt.plus();
+        vrt.printHello();
+    }
+}
