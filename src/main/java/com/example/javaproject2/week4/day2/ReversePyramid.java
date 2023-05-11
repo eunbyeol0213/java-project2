@@ -4,6 +4,7 @@ public class ReversePyramid {
     public String spaceChar = "0";
 
     public ReversePyramid(String spaceChar) {
+
         this.spaceChar = spaceChar;
     }
 
