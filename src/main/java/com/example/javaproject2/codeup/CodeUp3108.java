@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+//5월 11일 회고록
 class Student{
     private String code;
     private int testId;
